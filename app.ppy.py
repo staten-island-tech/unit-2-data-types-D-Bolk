@@ -13,10 +13,16 @@ print(values[0]) """
 
 
 
-
+""" 
 number = input("Is this number even or odd")
-if int(number) == 1: 
+if int(number) == 1:
     print("Odd")
 else:
     print("Even")
+ """
 
+
+
+def discount(age, isMember, isResident):
+    if( age < 12 or age>=65 ) and (isResident or isMember):
+        print(discount)
