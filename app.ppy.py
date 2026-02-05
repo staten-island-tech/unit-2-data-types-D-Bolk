@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
 
 
-service = input("How was the service?").capitalize
+""" service = input("How was the service?").capitalize
 if service == "Great":
     print("25%")
 elif service == "Good":
@@ -46,5 +46,30 @@ elif service == "Okay":
     print("15%")
 elif service == "Bad":
     print("0%")
-   
+    """
 
+""" def find_factors(number):
+
+    if not isinstance(number, int) or number <= 0:
+        return "Invalid input: Please enter a positive integer."
+
+    factors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            factors.append(i)
+    return factors
+num1 = 12
+factors1 = find_factors(num1)
+print(f"The factors of {num1} are: {factors1}") """
+
+
+import math
+
+def greatest_common_factor(a,b):
+    while b:
+        a, b = b, a % b
+    return a
+num1 = 94
+num2 = 58
+gcf = greatest_common_factor(num1, num2)
+print(f"The greatest common factor between {num1} and {num2} is: {gcf}")
