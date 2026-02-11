@@ -69,7 +69,7 @@ def greatest_common_factor(a,b):
     while b:
         a, b = b, a % b
     return a
-num1 = 94
-num2 = 58
+num1 = 58
+num2 = 94
 gcf = greatest_common_factor(num1, num2)
 print(f"The greatest common factor between {num1} and {num2} is: {gcf}")
